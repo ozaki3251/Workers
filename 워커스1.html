@@ -4,19 +4,24 @@
 <title>Workers의 거으 모든 것</title>
 <meta  charset="utf-8">
 <style>
+body{
+  margin: 0;
+}
 h1{
   font-size: 250px;
   font-style: oblique;
   text-align: center;
+  margin: 0;
+  display:inline;
+  color: red;
 }
 h2{
   font-size: 100px;
 text-align: center;
-
+margin: 0;
 }
-
 img{
-  border: 2px red;
+  border: 20px red solid;
   width: 300px;
   height: 300px;
   display: block;
@@ -24,15 +29,49 @@ img{
   margin-right: auto;
 }
 
+a{
+  text-decoration: none;
+  display: inline;
+  color: black;
+  margin: 0;
+}
+#겹치기{
+  font-size: 230px;
+  font-style: oblique;
+  text-align: center;
+  margin: 0;
+  border-top: 5px solid green;
+}
+#instar{
+  padding: 30px;
+  border-top: 5px solid green;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#media{
+  display: grid;
+  grid-template-columns:10fr 1fr;
+  font-size: 300px;
+}
+@media (max-width:1200px){
+  #q{
+    display: none;
+  }
+}
 </style>
 
 </head>
+
 <body>
-  <h1><a href="https://ko.wikipedia.org/wiki/%EB%85%B8%EB%8F%99%EC%9E%90"
-  title="노동자란?"style="color:red; text-decoration: none;">Workers</a></h1>
+  <div id="media">
+  <h1>Workers</a></h1><div id="q">凸</div>
+  </div>
+<div id="겹치기">
+  <h1 style="color:black; text-decoration: none;">Workers</a></h1>
+</div>
 
-
-<a href="사진 누르면1.html"><img src="1.jpg" width="20%"></a>
+  <a href="사진 누르면1.html"><img src="1.jpg" width="20%"></a>
 <img src="2.jpg" width="20%">
 <img src="3.jpg" width="20%">
 <img src="4.jpg" width="20%">
@@ -61,11 +100,10 @@ img{
 <img src="27.jpg" width="15%">
 <img src="28.jpg" style="transform: rotate( 180deg )"; width="25%">
 
-
-
-<a href="https://www.instagram.com/__eonvely/" title="언스타그램"style="color:black; text-decoration: none";><h2>언</h2></a>
-<a href="https://www.instagram.com/hyun____bh/"title="훈스타그램"style="color:black; text-decoration: none";><h2>훈</h2></a>
-<a href="https://www.instagram.com/01__07_/"title="태스타그램"style="color:black; text-decoration: none";><h2>태</h2></a>
-
+<div id="instar">
+<a href="https://www.instagram.com/__eonvely/" title="언스타그램" target="_blank" > <h2>언</h2></a>
+<a href="https://www.instagram.com/hyun____bh/"title="훈스타그램"target="_blank"> <h2>훈</h2></a>
+<a href="https://www.instagram.com/01__07_/"title="태스타그램"target="_blank"> <h2>태</h2></a>
+<div>
 
 <body>
