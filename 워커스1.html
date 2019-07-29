@@ -8,7 +8,36 @@
 
 body{
   margin: 0;
-}
+
+  }
+.background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    display: block;
+    background-image: url('고양이.jpg');
+    width: 1800px;
+    height:800px;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  .content {
+    position:relative;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
 h1{
   font-size: 250px;
   font-style: oblique;
@@ -16,14 +45,16 @@ h1{
   margin: 0;
   display:inline;
   color: red;
-}
+  }
+
 h2{
   font-size: 100px;
 text-align: center;
 margin: 0;
+
 }
 img{
-  border: 20px red solid;
+  border: 20px purple solid;
   width: 300px;
   height: 300px;
   display: block;
@@ -37,51 +68,59 @@ a{
   color: black;
   margin: 0;
 }
-#겹치기{
-  font-size: 230px;
+#underTitle{
+  font-size: 300px;
   font-style: oblique;
   text-align: center;
   margin: 0;
   border-top: 5px solid green;
-  font-family:monospace;
+  font-family: 'Play', sans-serif;
 }
 #instar{
   padding: 30px;
   border-top: 5px solid green;
+  border-bottom: 5px solid green;
   margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   font-family:
 
 }
-#media{
+#firstTitle{
   display: grid;
-  grid-template-columns:10fr 1fr;
+  grid-template-columns:1000fr 1fr;
   font-size: 300px;
-  font-family: monospace;
+  font-family: 'Play', sans-serif;
 }
 @media (max-width:1200px){
   #q{
     display: none;
+      font-size: 100px;
   }
 }
-
+#중앙{
+  text-align: center;
+  margin: 0;
+  border: 0;
+}
 
 
 </style>
 
 </head>
+<div class="background-image"></div>
+<div class="content">
+  <body>
 
-<body>
 
-  <div id="media">
-  <h1>WORKERS</a></h1><div id="q">凸</div>
-  </div>
-<div id="겹치기">
-  <h1 style="color:black; text-decoration: none;">WORKERS</a></h1>
+  <div id="firstTitle" >
+  <h1><strong>WORKERS</strong></a></h1></div> <div id="q"><strong>凸</strong></div>
+
+<div id="underTitle">
+  <h1 style="color:black; text-decoration: none;"><strong>WORKERS</strong></a></h1></div>
+<div id="중앙">
+  <a href="사진 누르면1.html" ><img src="1.jpg"style="display: inline" width="20%"></a>
 </div>
-
-  <a href="사진 누르면1.html"><img src="1.jpg" width="20%"></a>
 <img src="2.jpg" width="20%">
 <img src="3.jpg" width="20%">
 <img src="4.jpg" width="20%">
@@ -109,7 +148,8 @@ a{
 <img src="26.jpg" width="20%">
 <img src="27.jpg" width="15%">
 <img src="28.jpg" style="transform: rotate( 180deg )"; width="25%">
-<iframe width="800" height="538" src="https://www.youtube.com/embed/blVQMRbALnQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<img src="2초.gif">
+
 <div id="instar">
 <a href="https://www.instagram.com/__eonvely/" title="언스타그램" target="_blank" > <h2>언</h2></a>
 <a href="https://www.instagram.com/hyun____bh/"title="훈스타그램"target="_blank"> <h2>훈</h2></a>
@@ -136,4 +176,5 @@ a{
   	</script>
   <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
   </div>
-<body>
+</body>
+</div>
